@@ -11,12 +11,45 @@
       
     </div>
     
-    <div class='main-one'>
+  <div class='main-one'>
     <div>
       <h2>Black Friday</h2>
-      <h3>Descontos jamais vistos!</h3>
+      <h3>Descontos sobre desconto<br>jamais visto!</h3>
     </div>
   </div>
+  <div class='main-tree'>
+    <div>
+  
+    </div>
+    <div class='homeTwo'>
+      <div class='homeTwoDot'>
+        <a>Acupuntura Sistêmica</a>
+      </div>
+      <div class='homeTwoDot'>
+        <a>Craniopuntura</a>
+      </div>
+      <div class='homeTwoDot'>
+        <a>Auriculoterapia</a>
+      </div>
+      <div class='homeTwoDot'>
+        <a>Ventosaterapia</a>
+      </div>
+      <div class='homeTwoDot'>
+        <a>Gua Sha</a>
+      </div>
+      <div class='homeTwoDot'>
+        <a>Fórmulas Magistrias Chinesas</a>
+      </div>
+  
+      <!--
+                // <div @click='acupuntura()' class='homeTwoDot' :class='{ selectTitle: aplicarAcu }'>Acupuntura Sistêmica</div>
+                // <div @click='craniopuntura()' class='homeTwoDot' :class='{ selectTitle: aplicarCran }'>Craniopuntura</div>
+                // <div @click='auriculo()' class='homeTwoDot' :class='{ selectTitle: aplicarAur }'>Auriculoterapia</div>
+                // <div @click='ventosa()' class='homeTwoDot' :class='{ selectTitle: aplicarVen }'>Ventosaterapia</div>
+                -->
+    </div>
+    </div>
+    <br>
   <div class='main-tree'>
     <div>
         <!--
@@ -51,7 +84,7 @@
       </div>
       <br>
       <div>
-        <h5 class='hCincoTwo'><i class="fa-solid fa-angle-right"></i> Escolha o desconto:</h5>
+        <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Escolha o desconto:</h5>
       </div>
       <div class='main-l-trat'>
         <nuxt-link to="/50" class='dot-index'>50%</nuxt-link>
@@ -162,19 +195,19 @@ code {
   margin: 13px 0 -5px -10px;
   font-size: 1.5em;
   color: #fff;
- text-shadow: -2px 2px 5px #ffffff70,
-  -2px -2px 5px #ffffff70,
-  2px 2px 5px #ffffff70,
-  2px -2px 5px #ffffff70;
+  text-shadow: -2px 2px 5px #ffffff70,
+    -2px -2px 5px #ffffff70,
+    2px 2px 5px #ffffff70,
+    2px -2px 5px #ffffff70;
 }
 
 .profile h1:hover {
   color: #fff;
-  cursor:pointer;
- text-shadow: -2px 2px 5px #e23a28,
-  -2px -2px 5px #e23a28,
-  2px 2px 5px #e23a28,
-  2px -2px 5px #e23a28;
+  cursor: pointer;
+  text-shadow: -2px 2px 5px #e23a28,
+    -2px -2px 5px #e23a28,
+    2px 2px 5px #e23a28,
+    2px -2px 5px #e23a28;
 }
 
 .profile h4 {
@@ -189,28 +222,29 @@ code {
   justify-content: center;
   flex-direction: row;
   padding: 10px 0 15px 0;
-  box-shadow: 0px 10px 15px #ffffff10;
   background: black;
 }
 
 .main-one h2 {
   text-align: center;
   margin: 13px auto -20px 0px;
-    font-size: 1.5em;
-    color: black;
-    text-shadow: -2px 2px 5px #860d0d,
-      -2px -2px 5px #860d0d,
-      2px 2px 5px #860d0d,
-      2px -2px 5px #860d0d;
+  font-size: 1.5em;
+  color: black;
+  text-shadow: -2px 2px 5px #e23a28,
+    -2px -2px 5px #e23a28,
+    2px 2px 5px #e23a28,
+    2px -2px 5px #e23a28;
 }
+
 .main-one h3 {
   text-align: center;
-    font-size: 1.3em;
-    color: black;
-    text-shadow: -2px 2px 5px #ffffff50,
-      -2px -2px 5px #ffffff50,
-      2px 2px 5px #ffffff50,
-      2px -2px 5px #ffffff50;
+  font-size: 1.3em;
+  color: #00ff00;
+  text-shadow: -2px 2px 5px #498f49,
+    -2px -2px 5px #498f49,
+    2px 2px 5px #498f49,
+    2px -2px 5px #498f49;
+  line-height: 1;
 }
 
 .main-one div {
@@ -249,26 +283,97 @@ code {
 
 .main-two {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
-  padding: 15px 0 18px 0;
-  color: black;
-  box-shadow: 0 5px 20px #ffffff90;
+  padding: 10px 0 15px 0;
   background: black;
+}
+
+.main-two h2 {
+  text-align: center;
+  margin: 13px auto -20px 0px;
+  font-size: 1.5em;
   color: #fff;
+}
+
+.main-two h3 {
+  text-align: center;
+  font-size: 1.3em;
+  color: black;
+  text-shadow: -2px 2px 5px #ffffff50,
+    -2px -2px 5px #ffffff50,
+    2px 2px 5px #ffffff50,
+    2px -2px 5px #ffffff50;
+}
+
+table {
+  color: #fff;
+  border-collapse: collapse;
+}
+
+table th {
+  color: #00ff00;
+  border: 3px solid #860d0d;
+  padding: 10px;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: -2px 2px 5px #498f49,
+    -2px -2px 5px #00ff00,
+    2px 2px 5px #00ff00,
+    2px -2px 5px #00ff00;
+}
+
+table td {
+  border: 3px solid #860d0d;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+table tfoot tr td {
+  border: transparent;
+  color: #fff;
+  padding: 10px;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.main-two div {
+  margin: 0 0 0 15px;
+}
+
+.main-two a i {
+  font-size: 1.2em;
+}
+
+.main-two a:nth-child(1) i,
+.main-two a:nth-child(2) i {
+  padding-right: 3px;
+  margin: 0 0 0 3px;
+}
+
+.main-two a:nth-child(2) i {
+  padding-right: 4px;
+  margin: 0 0 0 4px;
+}
+
+.main-two a:nth-child(3) i {
+  margin: 0 0 0 3px;
+  padding-right: 2px;
+}
+
+.main-two a:nth-child(4) i {
+  margin: 0 0 0 5px;
+  padding-right: 2px;
 }
 
 .main-two a {
-  margin: 20px 0 0 0px;
-  color: #fff;
-  font-weight: 600;
+  margin: 0 0 0 10px;
+  color: #ddd;
 }
 
-.main-two i {
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 600;
-}
+
 
 .main-tree {
   display: flex;
@@ -291,12 +396,10 @@ code {
 
 .hCincoOne {
   margin: 10px 0px 22px 10px;
-  color: white;
 }
 
 .hCincoTwo {
   margin: -10px 0px 22px 10px;
-  color: white;
 
 }
 
@@ -423,7 +526,7 @@ code {
 }
 
 a.nuxt-link-exact-active {
-  background-color: #e23a2890;
+  background-color: #498f49;
   color: #fff;
   border-radius: 0% 10% 10% 10%;
 }
@@ -440,11 +543,11 @@ a.nuxt-link-exact-active {
 }
 
 .dot-index {
-cursor: pointer;
-transition: all .3s ease-in;
+  cursor: pointer;
+  transition: all .3s ease-in;
   background-color: #d8d8d840;
   margin: 10px 16px;
-  padding: 10px;
+  padding: 20px;
   font-size: 1em;
   text-transform: uppercase;
   font-weight: bold;
@@ -454,13 +557,20 @@ transition: all .3s ease-in;
 
 .dot-index:Hover {
   color: #fff;
-  border: solid .5px #e23a28;
+  border: solid .5px #00ff00;
 }
 
 .dot-index {
   margin: 5px 10px;
   padding: 8px;
-  font-size: .6em;
+  font-size: .8em;
+}
+
+
+.dot-index {
+  margin: 5px 10px;
+  padding: 8px;
+  font-size: 1em;
 }
 
 .dotHover {
@@ -480,10 +590,10 @@ transition: all .3s ease-in;
 
 .selectTitle {
   text-shadow: -2px 2px 5px #e23a28,
-  -2px -2px 5px #e23a28,
-  2px 2px 5px #e23a28,
-  2px -2px 5px #e23a28;
-  color: #fff;  
+    -2px -2px 5px #e23a28,
+    2px 2px 5px #e23a28,
+    2px -2px 5px #e23a28;
+  color: #fff;
 }
 
 .selectTitleHover {
@@ -497,19 +607,19 @@ transition: all .3s ease-in;
 }
 
 .white {
-    color: #ffffff;
-    margin: 0;
+  color: #ffffff;
+  margin: 0;
 }
 
 .homeTwo {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content:space-evenly;
-  align-self:center;
+  justify-content: space-evenly;
+  align-self: center;
   font-size: .9em;
   width: 95%;
-  margin:auto;
+  margin: auto;
   font-weight: bold;
   color: #dbd1d1;
 }
@@ -522,10 +632,10 @@ transition: all .3s ease-in;
 }
 
 .homeTwo a {
-font-size: 1em;
-margin: auto;
-font-weight: bold;
-color: #dbd1d1;
+  font-size: 1em;
+  margin: auto;
+  font-weight: bold;
+  color: #dbd1d1;
 }
 
 .homeTwoDot:hover {

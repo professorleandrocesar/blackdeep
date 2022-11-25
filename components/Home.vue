@@ -14,34 +14,33 @@
     <div class='main-one'>
     <div>
       <h2>Black Friday</h2>
-      <h3>Descontos jamais vistos!</h3>
+      <h3>Descontos sobre desconto<br>jamais visto!</h3>
     </div>
   </div>
   <div class='main-tree'>
     <div>
-        <!--
-        <h5 class='hCincoOne'><i class="fa-solid fa-yin-yang"></i> Terapias</h5>
+    
       </div>
       <div class='homeTwo'>
-        <div class='homeTwoDot' :class='{ selectTitle: aplicarAcu }'>
-          <nuxt-link to="/terapias">Acupuntura Sistêmica</nuxt-link>
+        <div class='homeTwoDot'>
+          <a >Acupuntura Sistêmica</a>
         </div>
-        <div class='homeTwoDot' :class='{ selectTitle: aplicarCran }'>
-          <nuxt-link to="/terapias">Craniopuntura</nuxt-link>
+        <div class='homeTwoDot'>
+          <a >Craniopuntura</a>
         </div>
-        <div class='homeTwoDot' :class='{ selectTitle: aplicarCran }'>
-          <nuxt-link to="/terapias">Auriculoterapia</nuxt-link>
+        <div class='homeTwoDot'>
+          <a >Auriculoterapia</a>
         </div>
-        <div class='homeTwoDot' :class='{ selectTitle: aplicarCran }'>
-          <nuxt-link to="/terapias">Ventosaterapia</nuxt-link>
+        <div class='homeTwoDot'>
+          <a >Ventosaterapia</a>
         </div>
-        <div class='homeTwoDot' :class='{ selectTitle: aplicarCran }'>
-          <nuxt-link to="/terapias">Gua Sha</nuxt-link>
+        <div class='homeTwoDot'>
+          <a >Gua Sha</a>
         </div>
-        <div class='homeTwoDot' :class='{ selectTitle: aplicarCran }'>
-          <nuxt-link to="/terapias">Fórmulas Magistrias Chinesas</nuxt-link>
+        <div class='homeTwoDot'>
+          <a >Fórmulas Magistrias Chinesas</a>
         </div>
-      -->
+
         <!--
               // <div @click='acupuntura()' class='homeTwoDot' :class='{ selectTitle: aplicarAcu }'>Acupuntura Sistêmica</div>
               // <div @click='craniopuntura()' class='homeTwoDot' :class='{ selectTitle: aplicarCran }'>Craniopuntura</div>
@@ -50,8 +49,67 @@
               -->
       </div>
       <br>
+    <div class='main-two'>
+    <div>
+      <table>
+        <thead>
+          <th>
+            50%
+          </th>
+          <th>
+            40%
+          </th>
+          <th>
+            30%
+          </th>
+          <th>
+            20%
+          </th>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="4">*Valores referente à pacote com 4 sessões/mês no plano recorrente;</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+
+            <td><s>R$ 200,00</s><br>R$ 100,00 </td>
+            <td><s>R$ 200,00</s><br>R$ 120,00</td>
+            <td><s>R$ 200,00</s><br>R$ 140,00</td>
+            <td><s>R$ 200,00</s><br>R$ 160,00</td>
+          </tr>
+          <tr>
+            <td>5 vagas</td>
+            <td>10 vagas</td>
+            <td>15 vagas</td>
+            <td>20 vagas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+    <br>
+    <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Regulamento Básico</h5>
+    <ul style='margin-right: 10px;'>
+      <li>Modalidade: Plano Recorrente Mensal (PRM);</li>
+      <li>Primeiro pagamento deve ser feito até o dia 05 de dezembro/22</li>
+      <li>Após, Pagamento deve ser feito até o dia 10 de cada mês;</li>
+      <li>Desconto é referente ao pacote de 4 sessões por mẽs, sendo 1 sessão por semana;</li>
+      <li>Sem reposição, se faltar uma semana, perde aquela sessão;</li>
+      <li>Escolha o dia e horário da semana, para fazer de forma contínua;</li>
+      <li>Em caso de falta, tentar marcar na mesma semana, em outro dia e horário;</li>
+      <li>Se não cumprir tais regras, serás 'retirado' da promoção, podendo ser dado a outra pessoa;</li>
+      <li>Saindo do plano, pode-se indicar alguém para ficar no seu lugar (mesmo dia/horário);</li>
+    </ul>
+  </div>
+  <br>
+  <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Regras básicas de acordo? Se sim, então...</h5>
+      <br>
       <div>
-        <h5 class='hCincoTwo'><i class="fa-solid fa-angle-right"></i> Escolha o desconto:</h5>
+        <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Escolha o desconto:</h5>
+        
       </div>
       <div class='main-l-trat'>
         <nuxt-link to="/50" class='dot-index'>50%</nuxt-link>
@@ -892,7 +950,6 @@ code {
   justify-content: center;
   flex-direction: row;
   padding: 10px 0 15px 0;
-  box-shadow: 0px 10px 15px #ffffff10;
   background: black;
 }
 
@@ -901,19 +958,20 @@ code {
   margin: 13px auto -20px 0px;
     font-size: 1.5em;
     color: black;
-    text-shadow: -2px 2px 5px #860d0d,
-      -2px -2px 5px #860d0d,
-      2px 2px 5px #860d0d,
-      2px -2px 5px #860d0d;
+    text-shadow: -2px 2px 5px #e23a28,
+      -2px -2px 5px #e23a28,
+      2px 2px 5px #e23a28,
+      2px -2px 5px #e23a28;
 }
 .main-one h3 {
   text-align: center;
     font-size: 1.3em;
-    color: black;
-    text-shadow: -2px 2px 5px #ffffff50,
-      -2px -2px 5px #ffffff50,
-      2px 2px 5px #ffffff50,
-      2px -2px 5px #ffffff50;
+    color: #00ff00;
+    text-shadow: -2px 2px 5px #498f49,
+      -2px -2px 5px #498f49,
+      2px 2px 5px #498f49,
+      2px -2px 5px #498f49;
+      line-height: 1;
 }
 
 .main-one div {
@@ -949,29 +1007,95 @@ code {
   margin: 0 0 0 10px;
   color: #ddd;
 }
-
 .main-two {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
-  padding: 15px 0 18px 0;
-  color: black;
-  box-shadow: 0 5px 20px #ffffff90;
   background: black;
+}
+
+.main-two h2 {
+  text-align: center;
+  margin: 13px auto -20px 0px;
+    font-size: 1.5em;
+    color: #fff;
+}
+.main-two h3 {
+  text-align: center;
+    font-size: 1.3em;
+    color: black;
+    text-shadow: -2px 2px 5px #ffffff50,
+      -2px -2px 5px #ffffff50,
+      2px 2px 5px #ffffff50,
+      2px -2px 5px #ffffff50;
+}
+
+table {
   color: #fff;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+table th{
+  color: #00ff00;
+  border: 3px solid #860d0d; 
+  font-weight: bold;
+  color: #00ff00;
+    text-shadow: -2px 2px 5px #498f49,
+      -2px -2px 5px #00ff00,
+      2px 2px 5px #00ff00,
+      2px -2px 5px #00ff00;
+}
+
+table td{
+  border: 3px solid #860d0d; 
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+table tfoot tr td{
+  border: transparent; 
+  color: #fff;
+  font-size:.8em;
+  font-weight: bold;
+}
+
+.main-two div {
+  margin: 0 0 0 15px;
+}
+
+.main-two a i {
+  font-size: 1.2em;
+}
+
+.main-two a:nth-child(1) i,
+.main-two a:nth-child(2) i {
+  padding-right: 3px;
+  margin: 0 0 0 3px;
+}
+
+.main-two a:nth-child(2) i {
+  padding-right: 4px;
+  margin: 0 0 0 4px;
+}
+
+.main-two a:nth-child(3) i {
+  margin: 0 0 0 3px;
+  padding-right: 2px;
+}
+
+.main-two a:nth-child(4) i {
+  margin: 0 0 0 5px;
+  padding-right: 2px;
 }
 
 .main-two a {
-  margin: 20px 0 0 0px;
-  color: #fff;
-  font-weight: 600;
+  margin: 0 0 0 10px;
+  color: #ddd;
 }
 
-.main-two i {
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 600;
-}
+
 
 .main-tree {
   display: flex;
@@ -1145,7 +1269,7 @@ cursor: pointer;
 transition: all .3s ease-in;
   background-color: #d8d8d840;
   margin: 10px 16px;
-  padding: 10px;
+  padding: 20px;
   font-size: 1em;
   text-transform: uppercase;
   font-weight: bold;
@@ -1155,13 +1279,20 @@ transition: all .3s ease-in;
 
 .dot-index:Hover {
   color: #fff;
-  border: solid .5px #e23a28;
+  border: solid .5px #00ff00;
 }
 
 .dot-index {
   margin: 5px 10px;
   padding: 8px;
-  font-size: .6em;
+  font-size: .8em;
+}
+
+
+.dot-index {
+  margin: 5px 10px;
+  padding: 8px;
+  font-size: 1em;
 }
 
 .dotHover {

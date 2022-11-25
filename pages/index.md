@@ -37,3 +37,5 @@
 
 
 https://api.whatsapp.com/send?phone=5521971305858%20&text=Ol%C3%A1%20Deep%20Acupuntura,%20acabei%20de%20pagar%20o%20valor%20referente%20à%20promoção%20Black%20Friday%20com%20desconto%20de%2040%,%20quero%20o%20horário%20de%20
+
+https://api.whatsapp.com/send?phone=5521971305858%20&text=Ol%C3%A1%20Deep%20Acupuntura,%20quero%20fazer%20parte%20da%20promoção%20-%20Black%20Friday%20agora!

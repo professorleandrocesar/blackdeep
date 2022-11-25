@@ -38,8 +38,8 @@
 
         <br>
         <div>
-            <h5 class='hCincoTwo'><i class="fa-solid fa-angle-right"></i> Escolha um horário (você será redirecionado à
-                página de pagamento):</h5>
+            <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Escolha um horário (você será redirecionado à página de 
+                pagamento) ou clique no 'whatsapp', para marcar diretamente com o acupunturista:</h5>
         </div>
         <div class='main-l-trat'>
             <a href="http://pag.ae/7YTtUNeM5" class='dot-index'>07:00 horas</a>
@@ -51,6 +51,7 @@
             <a href="http://pag.ae/7YTtUNeM5" class='dot-index'>13:00 horas</a>
             <a href="http://pag.ae/7YTtUNeM5" class='dot-index'>14:00 horas</a>
             <a href="http://pag.ae/7YTtUNeM5" class='dot-index'>15:00 horas</a>
+            <!-- 7YTtUNeM5 -->
         </div>
         <nuxt-child />
         <br>

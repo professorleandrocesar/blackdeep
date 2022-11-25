@@ -38,7 +38,7 @@
 
     <br>
     <div>
-      <h5 class='hCincoTwo'><i class="fa-solid fa-angle-right"></i> Escolha um dia:</h5>
+      <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Escolha um dia:</h5>
     </div>
     <div class='main-l-trat'>
       <nuxt-link to="/30/segunda" class='dot-index'>Segunda</nuxt-link>
@@ -449,7 +449,7 @@ a.nuxt-link-exact-active {
 .dot-index {
   margin: 5px 10px;
   padding: 8px;
-  font-size: .6em;
+  font-size: .8em;
 }
 
 .dotHover {

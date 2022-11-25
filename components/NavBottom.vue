@@ -1,12 +1,16 @@
 <template>
   <div>
     <div class="nav-bottom">
+      <NuxtLink to='/'>
+        <i class="fas fasi-nav fa-home"></i>
+        <h5>INÍCIO</h5>
+      </NuxtLink>
       <a href="https://deepacupuntura.com">
         <i class="fa-solid fa-globe"></i>
         <h5>SITE</h5>
       </a>
       <a
-      href='https://api.whatsapp.com/send?phone=5521971305858%20&text=Ol%C3%A1%20Leandro%20Cesar,%20fiquei%20interessado(a)%20no%20seus%20serviços%20de%20Acupuntura,%20me%20chamo%20'>
+      href='https://api.whatsapp.com/send?phone=5521971305858%20&text=Ol%C3%A1%20Deep%20Acupuntura,%20quero%20fazer%20parte%20da%20promoção%20-%20Black%20Friday%20agora!'>
       <i class="fa-brands fa-whatsapp"></i>
       <h5>WHATSAPP</h5>
       </a>

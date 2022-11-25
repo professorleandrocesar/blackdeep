@@ -38,18 +38,15 @@
 
         <br>
         <div>
-            <h5 class='hCincoTwo'><i class="fa-solid fa-angle-right"></i> Escolha um horário (você será redirecionado à
-                página de pagamento):</h5>
+            <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Escolha um horário (você será redirecionado à página de 
+                pagamento) ou clique no 'whatsapp', para marcar diretamente com o acupunturista:</h5>
         </div>
         <div class='main-l-trat'>
-            <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>07:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>08:00 horas</a>
-            <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>09:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>10:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>11:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>12:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>13:00 horas</a>
-            <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>14:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>15:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>16:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>17:00 horas</a>
@@ -57,6 +54,7 @@
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>19:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>20:00 horas</a>
             <a href="http://pag.ae/7YTtX2UKu" class='dot-index'>21:00 horas</a>
+            <!-- 7YTtX2UKu -->
         </div>
         <nuxt-child />
         <br>
