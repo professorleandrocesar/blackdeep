@@ -42,7 +42,7 @@
         </div>
         <div class='main-l-trat'>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>08:00 horas</a>
-            <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>10:00 horas</a>
+            <a class='dot-indexOk'>10:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>12:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>13:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>14:00 horas</a>
@@ -444,6 +444,19 @@ a.nuxt-link-exact-active {
     font-weight: bold;
     border-radius: 5% 4% 15%;
     border: solid .5px;
+}
+.dot-indexOk {
+    transition: all .3s ease-in;
+    background-color: #440f0f;
+    margin: 5px 10px;
+    padding: 8px;
+    font-size: .6em;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    font-weight: bold;
+    border-radius: 5% 4% 15%;
+    border: solid .5px;
+    color: rgb(213, 16, 16);
 }
 
 .dot-index:Hover {
