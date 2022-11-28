@@ -50,7 +50,7 @@
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>18:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>19:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>20:00 horas</a>
-            <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>21:00 horas</a>
+            
             <!-- 7YTtTQXX9 -->
         </div>
 <nuxt-child />
@@ -74,7 +74,7 @@ export default {
         mode: 'ease-in'
     },
     head: {
-        title: '50% - Black Desconto | Deep Acupuntura',
+        title: 'Black Desconto | Deep Acupuntura',
         htmlAttrs: {
             lang: 'pt-br'
         },

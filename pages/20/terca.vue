@@ -44,15 +44,14 @@
         <div class='main-l-trat'>
             <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>07:00 horas</a>
             <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>08:00 horas</a>
-            <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>11:00 horas</a>
+            <a class='dot-indexOk'>11:00 horas</a>
             <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>12:00 horas</a>
-            <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>13:00 horas</a>
+            <a class='dot-indexOk'>13:00 horas</a>
             <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>15:00 horas</a>
             <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>16:00 horas</a>
             <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>17:00 horas</a>
             <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>18:00 horas</a>
             <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>19:00 horas</a>
-            <a href="http://pag.ae/7YTtYQGS5" class='dot-index'>21:00 horas</a>
             <!-- 7YTtYQGS5 -->
         </div>
         <nuxt-child />
@@ -76,7 +75,7 @@ export default {
         mode: 'ease-in'
     },
     head: {
-        title: '50% - Black Desconto | Deep Acupuntura',
+        title: 'Black Desconto | Deep Acupuntura',
         htmlAttrs: {
             lang: 'pt-br'
         },
@@ -105,6 +104,20 @@ export default {
 a {
     text-decoration: none;
     color: #fff;
+}
+
+.dot-indexOk {
+    transition: all .3s ease-in;
+    background-color: #440f0f;
+    margin: 5px 10px;
+    padding: 8px;
+    font-size: .6em;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    font-weight: bold;
+    border-radius: 5% 4% 15%;
+    border: solid .5px;
+    color: rgb(213, 16, 16);
 }
 
 i {

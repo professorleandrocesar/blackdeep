@@ -46,7 +46,6 @@
       <nuxt-link to="/40/quarta" class='dot-index'>Quarta</nuxt-link>
       <nuxt-link to="/40/quinta" class='dot-index'>Quinta</nuxt-link>
       <nuxt-link to="/40/sexta" class='dot-index'>Sexta</nuxt-link>
-      <nuxt-link to="/40/sabado" class='dot-index'>Sábado</nuxt-link>
     </div>
     <nuxt-child />
     <br>
@@ -69,7 +68,7 @@ export default {
     mode: 'ease-in'
   },
   head: {
-    title: '50% - Black Desconto | Deep Acupuntura',
+    title: 'Black Desconto | Deep Acupuntura',
     htmlAttrs: {
       lang: 'pt-br'
     },

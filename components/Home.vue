@@ -13,7 +13,7 @@
     
     <div class='main-one'>
     <div>
-      <h2>Black Friday</h2>
+      <h2>Black Descontos</h2>
       <h3>Descontos sobre desconto<br>jamais visto!</h3>
     </div>
   </div>
@@ -80,8 +80,8 @@
             <td><s>R$ 200,00</s><br>R$ 160,00</td>
           </tr>
           <tr>
-            <td>5 vagas</td>
-            <td>10 vagas</td>
+            <td><s>5 vagas</s></td>
+            <td>9 vagas</td>
             <td>15 vagas</td>
             <td>20 vagas</td>
           </tr>
@@ -112,7 +112,7 @@
         
       </div>
       <div class='main-l-trat'>
-        <nuxt-link to="/50" class='dot-index'>50%</nuxt-link>
+        <a class='dot-indexOk'>50%</a>
         <nuxt-link to="/40" class='dot-index'>40%</nuxt-link>
         <nuxt-link to="/30" class='dot-index'>30%</nuxt-link>
         <nuxt-link to="/20" class='dot-index'>20%</nuxt-link>
@@ -868,6 +868,9 @@ e exercícios físicos.</span>`,
 </script>
 
 <style scoped>
+s {
+  color: red
+}
 a {
   text-decoration: none;
   color: #fff;
@@ -943,6 +946,20 @@ code {
   font-size: .9em;
   font-weight: 100;
   color: #e23a28;
+}
+
+.dot-indexOk {
+  transition: all .3s ease-in;
+  background-color: #440f0f;
+  margin: 5px 10px;
+  padding: 8px;
+  font-size: .6em;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  font-weight: bold;
+  border-radius: 5% 4% 15%;
+  border: solid .5px;
+  color: rgb(213, 16, 16);
 }
 
 .main-one {

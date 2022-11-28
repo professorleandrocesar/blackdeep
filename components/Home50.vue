@@ -13,7 +13,7 @@
     
   <div class='main-one'>
     <div>
-      <h2>Black Friday</h2>
+      <h2>Black Descontos</h2>
       <h3>Descontos sobre desconto<br>jamais visto!</h3>
     </div>
   </div>
@@ -87,7 +87,7 @@
         <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Escolha o desconto:</h5>
       </div>
       <div class='main-l-trat'>
-        <nuxt-link to="/50" class='dot-index'>50%</nuxt-link>
+        <a class='dot-indexOk'>50%</a>
         <nuxt-link to="/40" class='dot-index'>40%</nuxt-link>
         <nuxt-link to="/30" class='dot-index'>30%</nuxt-link>
         <nuxt-link to="/20" class='dot-index'>20%</nuxt-link>
@@ -114,7 +114,7 @@ export default {
     mode: 'ease-in'
   },
   head: {
-    title: '50% - Black Desconto | Deep Acupuntura',
+    title: 'Black Desconto | Deep Acupuntura',
     htmlAttrs: {
       lang: 'pt-br'
     },
@@ -274,6 +274,20 @@ code {
 .main-one a:nth-child(4) i {
   margin: 0 0 0 5px;
   padding-right: 2px;
+}
+
+.dot-indexOk {
+  transition: all .3s ease-in;
+  background-color: #440f0f;
+  margin: 5px 10px;
+  padding: 8px;
+  font-size: .6em;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  font-weight: bold;
+  border-radius: 5% 4% 15%;
+  border: solid .5px;
+  color: rgb(213, 16, 16);
 }
 
 .main-one a {

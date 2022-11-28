@@ -74,7 +74,7 @@ export default {
         mode: 'ease-in'
     },
     head: {
-        title: '50% - Black Desconto | Deep Acupuntura',
+        title: 'Black Desconto | Deep Acupuntura',
         htmlAttrs: {
             lang: 'pt-br'
         },
