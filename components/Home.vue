@@ -81,7 +81,7 @@
           </tr>
           <tr>
             <td><s>5 vagas</s></td>
-            <td>8 vagas</td>
+            <td>7 vagas</td>
             <td>15 vagas</td>
             <td>20 vagas</td>
           </tr>

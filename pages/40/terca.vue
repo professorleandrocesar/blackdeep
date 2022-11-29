@@ -45,10 +45,10 @@
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>07:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>08:00 horas</a>
             <a class='dot-indexOk'>11:00 horas</a>
-            <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>12:00 horas</a>
-            <a class='dot-indexOk'>13:00 horas</a>
+            <a class='dot-indexOk'>12:00 horas</a>
+            <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>13:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>15:00 horas</a>
-            <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>16:00 horas</a>
+            <a class='dot-indexOk'>16:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>17:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>18:00 horas</a>
             <a href="http://pag.ae/7YTtTQXX9" class='dot-index'>19:00 horas</a>
