@@ -6,7 +6,7 @@
 
       <div>
         <h1>Deep Acupuntura</h1>
-        <h4>| Clinica de Medicina Chinesa | </h4>
+        <h4>| Clinica de Medicina Chinesa |</h4>
       </div>
       
     </div>
@@ -72,43 +72,23 @@
           </tr>
         </tfoot>
         <tbody>
-          <tr>
-
-            <td><s>R$ 200,00</s><br>R$ 100,00 </td>
-            <td><s>R$ 200,00</s><br>R$ 120,00</td>
-            <!--
-            <td><s>R$ 200,00</s><br>R$ 140,00</td>
-            <td><s>R$ 200,00</s><br>R$ 160,00</td>
-            -->
+          <tr >
+            <td><s>R$ 200,00</s><br><b class="font-green"> R$ 100,00 </b></td>
+            <td><s>R$ 200,00</s><br><b class="font-green"> R$ 120,00 </b></td>
+            <td><s>R$ 200,00</s><br><b class="font-green"> R$ 140,00 </b></td>
+            <td><s>R$ 200,00</s><br><b class="font-green"> R$ 160,00 </b></td>
           </tr>
           <tr>
             <td><s>5 vagas</s></td>
-            <td>7 vagas</td>
-            <td>15 vagas</td>
-            <td>20 vagas</td>
+            <td><b class="font-green-white"> 7 vagas </b></td>
+            <td><b class="font-green-white"> 15 vagas </b></td>
+            <td><b class="font-green-white"> 20 vagas </b></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
-  <div>
-    <br>
-    <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Regulamento Básico</h5>
-    <ul style='margin-right: 10px;'>
-      <li>Modalidade: Plano Recorrente Mensal (PRM);</li>
-      <li>Primeiro pagamento deve ser feito até o dia 05 de dezembro/22</li>
-      <li>Após, Pagamento deve ser feito até o dia 10 de cada mês;</li>
-      <li>Desconto é referente ao pacote de 4 sessões por mẽs, sendo 1 sessão por semana;</li>
-      <li>Sem reposição, se faltar uma semana, perde aquela sessão;</li>
-      <li>Escolha o dia e horário da semana, para fazer de forma contínua;</li>
-      <li>Em caso de falta, tentar marcar na mesma semana, em outro dia e horário;</li>
-      <li>Se não cumprir tais regras, serás 'retirado' da promoção, podendo ser dado a outra pessoa;</li>
-      <li>Saindo do plano, pode-se indicar alguém para ficar no seu lugar (mesmo dia/horário);</li>
-    </ul>
-  </div>
   <br>
-  <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Regras básicas de acordo? Se sim, então...</h5>
-      <br>
       <div>
         <h5 class='hCincoTwo' style='margin-right: 10px;'><i class="fa-solid fa-angle-right"></i> Escolha o desconto:</h5>
         
@@ -119,10 +99,15 @@
         <nuxt-link to="/30" class='dot-index'>30%</nuxt-link>
         <nuxt-link to="/20" class='dot-index'>20%</nuxt-link>
       </div>
+      
+      <br>
+      <div>
+      <br>
+        <h4 @click='regras()' class='dot-index' :class='{ selectTitleHover: aplicarNine }' v-html='contentRegras'></h4>
+      
     </div>
     <nuxt-child />
-
-    <br>
+    </div>
     <!--
      <div class='hr'></div>
      -->
@@ -166,704 +151,27 @@ export default {
   },
   data() {
       return {
-          aplicar : '',
-          output: '',
-          aplicarAcu: '',
-          aplicarAur: '',
-          aplicarVen: '',
-          aplicarCran: '',
-          aplicarAcu: '',
-          aplicarAur: '',
-          aplicarVen: '',
-          aplicar: '',
-          aplicarTwo: '',
-          aplicarTree: '',
-          aplicarFour: '',
-          aplicarFive: '',
-          aplicarSix: '',
-          aplicarSeven: '',
-          aplicarEight: '',
-          aplicarNine: '',
-          aplicarTen: '',
-          aplicarEleven: '',
-          aplicarTwelve: '',
-          aplicarThirteen:'' ,
-          aplicarFourteen: '',
-          rAnsiedade:'50%',
-          rDepressao:'40%',
-          rEstresse:'30%',
-          rCervicalgia:'20%',
-          rLombalgia: 'Lombalgia',
-          rEnxaqueca: 'Enxaqueca',
-          rCefaleia:'Cefaleia',
-          rBaixaImunidade:'Baixa Imunidade',
-          rBurnout:'Burnout',
-          rLaringite:'Laringite',
-          rInsonia:'Insônia',
-          rZumbido:'Zumbido',
-          rLabirintite:'Labirintite',
-          rSinusite:'Sinusite',
+        contentRegras:'Regras básicas',
+          
       }
   },
   methods: {
-    acupuntura() {
-          this.aplicarAcu = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicarCran = false,
-          this.aplicar = true,
-          this.aplicarTwo = true,
-          this.aplicarTree = true,
-          this.aplicarFour = true,
-          this.aplicarFive = true,
-          this.aplicarSix = true,
-          this.aplicarSeven = true,
-          this.aplicarEight = true,
-          this.aplicarNine = true,
-          this.aplicarTen = true,
-          this.aplicarEleven = true,
-          this.aplicarTwelve = true,
-          this.aplicarThirteen = true,
-          this.aplicarFourteen = true,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-    },
-    craniopuntura() {
-          this.aplicarAcu = false,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicarCran = true,
-          this.aplicar = true,
-          this.aplicarTwo = true,
-          this.aplicarTree = true,
-          this.aplicarFour = true,
-          this.aplicarFive = true,
-          this.aplicarSix = true,
-          this.aplicarSeven = true,
-          this.aplicarCran = true,
-          this.aplicarEight = true,
-          this.aplicarNine = true,
-          this.aplicarTen = true,
-          this.aplicarEleven = true,
-          this.aplicarCran = true,
-          this.aplicarTwelve = true,
-          this.aplicarThirteen = true,
-          this.aplicarFourteen = true,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-    },
-    auriculo() {
-          this.aplicarAur = true,
-          this.aplicarAcu = false,
-          this.aplicarVen = false,
-          this.aplicar = true,
-          this.aplicarCran = false,
-          this.aplicarTwo = true,
-          this.aplicarTree = true,
-          this.aplicarFour = true,
-          this.aplicarFive = true,
-          this.aplicarSix = true,
-          this.aplicarSeven = true,
-          this.aplicarEight = true,
-          this.aplicarNine = true,
-          this.aplicarTen = true,
-          this.aplicarEleven = true,
-          this.aplicarTwelve = true,
-          this.aplicarThirteen = true,
-          this.aplicarFourteen = true,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-    },
-    ventosa() {
-          this.aplicarVen = true,
-          this.aplicarCran = true,
-          this.aplicarAcu = false,
-          this.aplicarAur = false,
-          this.aplicar = false,
-          this.aplicarCran = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = true,
-          this.aplicarFour = true,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-    },
-      ansiedade() {
-          this.aplicarAcu = true,
-          this.aplicarAur = true,
-          this.aplicarCran = false,
-          this.aplicarVen = false,
-          this.aplicar = true,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rDepressao = 'depressão',
-          this.rAnsiedade = `<span><h4>Ansiedade</h4></span>
-           <h4 @click='ansiedade()' class='dot-index' :class='{ selectTitleHover: aplicar }' v-html='rAnsiedade'></h4>
-        <h4 @click='depressao()' class='dot-index' :class='{ selectTitleHover: aplicarTwo }' v-html='rDepressao'></h4>
-        <h4 @click='estresse()' class='dot-index' :class='{ selectTitleHover: aplicarFive }' v-html='rEstresse'></h4>
-        <h4 @click='cervicalgia()' class='dot-index' :class='{ selectTitleHover: aplicarTree }' v-html='rCervicalgia'>`,
-          this.rEstresse='',
-          this.rCervicalgia='',
-          this.rLombalgia= '',
-          this.rEnxaqueca= '',
-          this.rCefaleia='',
-          this.rBaixaImunidade=' ',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      depressao(){
-          this.aplicarAcu = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicarCran = true,
-          this.aplicar = false,
-          this.aplicarTwo = true,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = `<span><h4>Depressão</h4></span>
-          <br>
-          <span class='white'>é um transtorno mental caracterizado por tristeza profunda persistente 
-          e aversão a atividades. Pode afetar os pensamentos, comportamentos, sentimentos e o bem-estar de uma pessoa.</span>`,
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      estresse() {
-          this.aplicarAcu = true,
-          this.aplicarAur = true,
-          this.aplicarVen = false,
-          this.aplicarTwo = false,
-          this.aplicarCran = false,
-          this.aplicar = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = true,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse=`<span><h4>Estresse</h4></span>
-          <br>
-          <span class='white'>É causado pela ansiedade e pela depressão devido à mudança brusca no 
-          estilo de vida e a exposição a um determinado ambiente, que leva a pessoa a sentir um determinado tipo de angústia. </span>`,
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      cervicalgia(){
-          this.aplicarAcu = true,
-          this.aplicarAur = true,
-          this.aplicarVen = true,
-          this.aplicar = false,
-          this.aplicarCran = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = true,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia=`<span><h4>Cervicalgia</h4></span>
-          <br>
-          <span class='white'>Dor no pescoço e ombro que varia em intensidade, podendo ser incômoda ou 
-          como um choque elétrico desde o pescoço até o braço.</span>`,
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      lombalgia(){
-          this.aplicarAcu = true,
-          this.aplicarAur = true,
-          this.aplicarVen = true,
-          this.aplicarCran = true,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = true,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= `<span><h4>Lombalgia</h4></span>
-          <br>
-          <span class='white'>Uma condição dolorosa comum que afeta a parte inferior da coluna.
-A dor lombar é causada por uma lesão em um músculo (tensão) ou ligamento (entorse). As causas comuns incluem 
-levantamento impróprio, má postura, falta de exercícios físicos regulares, fratura, disco rompido ou artrite.</span>`,
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      enxaqueca() {
-          this.aplicarAcu = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicarCran = true,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = true,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= `<span><h4>Enxaqueca</h4></span>
-          <br>
-          <span class='white'>Dor de cabeça de intensidade variável, muitas vezes acompanhada de náuseas e sensibilidade à luz e ao som.
-Às vezes, as enxaquecas são precedidas por sintomas de alerta. Os gatilhos incluem alterações hormonais, certos alimentos e bebidas, estresse 
-e exercícios físicos.</span>`,
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      cefaleia () {
-          this.aplicarAcu = true,
-          this.aplicarAur = true,
-          this.aplicarVen = false,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = true,
-          this.aplicarCran = true,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia=`<span><h4>Cefaléia</h4></span>
-          <br>
-          <span class='white'>Uma sensação dolorosa em qualquer parte da cabeça, 
-          desde aguda até incômoda, podendo ocorrer junto com outros sintomas.</span>`,
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      baixaImunidade () {
-          this.aplicarAcu = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicarCran = false,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = true,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade=`<span><h4>Baixa Imunidade</h4></span>
-          <br>
-          <span class='white'>pode ser percebida quando o organismo dá alguns sinais, indicando que as defesas do organismo estão baixas e que o sistema imunológico não está sendo capaz de combater 
-          os agentes infecciosos, como vírus e bactérias, o que pode fazer com que a pessoa fique doente com mais frequência.</span>`,
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      burnOut() {
-          this.aplicarAcu = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicarCran = true,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = true,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout=`<span><h4>Burnout</h4></span>
-          <br>
-          <span class='white'>A síndrome de burnout é um distúrbio psíquico causado pela exaustão extrema, sempre relacionada ao trabalho de um indivíduo. Essa condição 
-          também é chamada de “síndrome do esgotamento profissional” e afeta quase todas as facetas da vida de um indivíduo.</span>`,
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      laringite() {
-          this.aplicarAcu = true,
-          this.aplicarAur = true,
-          this.aplicarVen = false,
-          this.aplicarCran = true,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = true,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite=`<span><h4>Laringite</h4></span>
-          <br>
-          <span class='white'>é a inflamação da laringe (região das vias aéreas onde ficam localizadas as cordas vocais), que conecta a faringe à traqueia e faz parte do sistema respiratório. A inflamação 
-          dessa região pode ser causada por vírus (mais prevalente), bactérias, inalação de agentes alérgicos ou esforço excessivo da voz.</span>`,
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      insonia() {
-          this.aplicarAcu = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = true,
-          this.aplicarCran = true,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia=`<span><h4>Insônia</h4></span>
-          <br>
-          <span class='white'>é caracterizada pela dificuldade de dormir ou conseguir manter um sono contínuo sem ser interrompido durante a noite. Cerca de 30% a 50% dos brasileiros sofrem com a insônia, 
-          que pode se manifestar por diversas razões, como estresse, ansiedade, depressão, dor crônica e uso de certos medicamentos.</span>`,
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      zumbido() {
-          this.aplicarAcu = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicarCran = true,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = true,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido=`<span><h4>Zumbido</h4></span>
-          <br>
-          <span class='white'>Também chamado de Sibilo ou Tinido, pode ser definido como uma ilusão auditiva, ou seja, uma sensação sonora não relacionada com uma fonte externa de estimulação.</span>`,
-          this.rLabirintite='Labirintite',
-          this.rSinusite='Sinusite'
-      },
-      labirintite() {
-          this.aplicarAcu = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicarCran = true,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = true,
-          this.aplicarFourteen = false,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite=`<span><h4>Labirintite</h4></span>
-          <br>
-          <span class='white'>Labirintite é o nome popular que se dá a todos os transtornos do labirinto, uma estrutura interna do ouvido composta pela cóclea (imprescindível para a 
-          nossa audição), pelo vestíbulo e pelos canais semicirculares (que têm papel na manutenção do nosso equilíbrio).</span>`,
-          this.rSinusite='Sinusite'
-      },
-      sinusite() {
-          this.aplicarAcu = true,
-          this.aplicarCran = true,
-          this.aplicarAur = false,
-          this.aplicarVen = false,
-          this.aplicar = false,
-          this.aplicarTwo = false,
-          this.aplicarTree = false,
-          this.aplicarFour = false,
-          this.aplicarFive = false,
-          this.aplicarSix = false,
-          this.aplicarSeven = false,
-          this.aplicarEight = false,
-          this.aplicarNine = false,
-          this.aplicarTen = false,
-          this.aplicarEleven = false,
-          this.aplicarTwelve = false,
-          this.aplicarThirteen = false,
-          this.aplicarFourteen = true,
-          this.rAnsiedade = 'ansiedade',
-          this.rDepressao = 'Depressão',
-          this.rEstresse='Estresse',
-          this.rCervicalgia='Cervicalgia',
-          this.rLombalgia= 'Lombalgia',
-          this.rEnxaqueca= 'Enxaqueca',
-          this.rCefaleia='Cefaleia',
-          this.rBaixaImunidade='Baixa Imunidade',
-          this.rBurnout='Burnout',
-          this.rLaringite='Laringite',
-          this.rInsonia='Insônia',
-          this.rZumbido='Zumbido',
-          this.rLabirintite='Labirintite',
-          this.rSinusite=`<span><h4>Sinusite</h4></span>
-          <br>
-          <span class='white'>é a inflamação das mucosas dos seios da face, região do crânio formada por cavidades ósseas ao redor do nariz, maçãs do rosto e olhos. Os 
-          seios da face dão ressonância à voz, aquecem o ar inspirado e diminuem o peso do crânio, o que facilita sua sustentação.</span>`
+      regras() {
+          this.contentRegras=`
+          <div class='main-tow'>
+            <h4>Regras Básicas</h4>
+          <ul style='margin-right: 10px;'>
+            <li>A promoção é referente ao pacote de 4 sessões por mẽs (1 sessão por semana);</li>
+            <li>Primeiro pagamento deve ser feito até o dia 05 de dezembro/22</li>
+            <li>Após, Pagamento deve ser feito até o dia 10 de cada mês;</li>
+            <li>Modalidade: Plano Recorrente Mensal (PRM);</li>
+            <li>Escolha o dia e horário da semana, para fazer de forma contínua;</li>
+        <li>Sem reposição, se faltar uma semana, perde aquela sessão;</li>
+        <li>Em caso de falta, tentar marcar na mesma semana, em outro dia e horário;</li>
+        <li>Se não cumprir tais regras, serás 'retirado' da promoção, para ser ofertado a outra pessoa;</li>
+        <li>Saindo do plano, pode-se indicar alguém para ficar no seu lugar;</li>
+        </div>
+      </ul>`
       }
   } 
 }
@@ -1060,6 +368,25 @@ table th{
   border: 3px solid #860d0d; 
   font-weight: bold;
   color: #00ff00;
+    text-shadow: -2px 2px 5px #498f49,
+      -2px -2px 5px #00ff00,
+      2px 2px 5px #00ff00,
+      2px -2px 5px #00ff00;
+}
+
+.font-green {
+  color: #00ff00;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: -2px 2px 5px #498f49,
+      -2px -2px 5px #00ff00,
+      2px 2px 5px #00ff00,
+      2px -2px 5px #00ff00;
+}
+.font-green-white {
+  color: #00ff00;
+    font-weight: bold;
+    color: #fff;
     text-shadow: -2px 2px 5px #498f49,
       -2px -2px 5px #00ff00,
       2px 2px 5px #00ff00,
