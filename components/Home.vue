@@ -79,6 +79,12 @@
             <td><s>R$ 200,00</s><br><b class="font-green"> R$ 160,00 </b></td>
           </tr>
           <tr>
+            <td><s>25 R$/<br>sessão</s></td>
+            <td><b class="font-green-white"> 30 R$/<br>sessão </b></td>
+            <td><b class="font-green-white"> 35 R$/<br>sessão </b></td>
+            <td><b class="font-green-white"> 40 R$/<br>sessão </b></td>
+          </tr>
+          <tr>
             <td><s>5 vagas</s></td>
             <td><b class="font-green-white"> 7 vagas </b></td>
             <td><b class="font-green-white"> 15 vagas </b></td>
@@ -408,7 +414,7 @@ table tfoot tr td{
 }
 
 .main-two div {
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0px;
 }
 
 .main-two a i {
