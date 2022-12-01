@@ -15,7 +15,6 @@
   top: -1px;
   background: black;
   border-radius: 0% 0% 10% 10%;
-  box-shadow: 0px .5px 5px #e23a2850;
   z-index: 10;
 }
 

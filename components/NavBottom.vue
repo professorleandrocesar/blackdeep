@@ -5,23 +5,29 @@
         <i class="fas fasi-nav fa-home"></i>
         <h5>INÍCIO</h5>
       </NuxtLink>
-      <a href="https://deepacupuntura.com">
-        <i class="fa-solid fa-globe"></i>
-        <h5>SITE</h5>
-      </a>
+      <!-- 
+
+        <a href="https://deepacupuntura.com">
+          <i class="fa-solid fa-globe"></i>
+          <h5>SITE</h5>
+        </a>
+      -->
       <a
       href='https://api.whatsapp.com/send?phone=5521971305858%20&text=Ol%C3%A1%20Deep%20Acupuntura,%20quero%20fazer%20parte%20da%20promoção%20-%20Black%20Friday%20agora!'>
       <i class="fa-brands fa-whatsapp"></i>
       <h5>WHATSAPP</h5>
       </a>
-      <a href="https://instagram.com/deepacupuntura">
-        <i class="fa-brands fa-instagram-square"></i>
-        <h5>INSTAGRAM</h5>
-      </a>
-      <a href="https://goo.gl/maps/4bbTEUKuQDbqotTG9">
-        <i class="fa-solid fa-location-dot"></i>
-        <h5>LOCALIZAÇÃO</h5>
-      </a>
+      <!-- 
+
+        <a href="https://instagram.com/deepacupuntura">
+          <i class="fa-brands fa-instagram-square"></i>
+          <h5>INSTAGRAM</h5>
+        </a>
+        <a href="https://goo.gl/maps/4bbTEUKuQDbqotTG9">
+          <i class="fa-solid fa-location-dot"></i>
+          <h5>LOCALIZAÇÃO</h5>
+        </a>
+      -->
     </div>
   </div>
 </template>
