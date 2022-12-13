@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="nav-bottom">
-      <NuxtLink to='/'>
+      <nuxt-link to='/'>
         <i class="fas fasi-nav fa-home"></i>
         <h5>INÍCIO</h5>
-      </NuxtLink>
+      </nuxt-link>
       <!-- 
 
         <a href="https://deepacupuntura.com">

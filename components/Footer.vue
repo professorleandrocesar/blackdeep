@@ -1,6 +1,6 @@
 <template>
     <footer class="main-c">
-        <NuxtLink to="/"><LCLogo/></NuxtLink>
+        <nuxt-link to="/"><LCLogo/></nuxt-link>
         
         <h1>Leandro Cesar</h1>
         <div class="footer-icons-copyright">
@@ -24,7 +24,7 @@
                 </li>
             </ul>
         <p class="ul-icons-p ">
-          <NuxtLink to="/">leandrocesar.co</NuxtLink> &copy; 2021 <br> CNPJ: 40.930.118/0001-33<br>| Leandro Cesar Ramos da Costa |
+          <nuxt-link to="/">leandrocesar.co</nuxt-link> &copy; 2021 <br> CNPJ: 40.930.118/0001-33<br>| Leandro Cesar Ramos da Costa |
         </p>
         </div>
     </footer>
